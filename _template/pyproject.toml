@@ -1,0 +1,23 @@
+[project]
+name = "nn-technique"
+version = "0.1.0"
+description = "Experiment set: <technique>"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = [
+    "marimo",
+]
+
+[build-system]
+requires = ["uv_build>=0.9,<1"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+# Every set uses the same import name; sets never share an environment, so they can't clash.
+module-name = "experiment"

@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Experiment-set data: keep only the README of each data/ folder
+*/data/*
+!*/data/README.md
